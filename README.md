@@ -5,6 +5,6 @@ esse repositorio guarda os trabalhos da disciplina
 ## Matheus Nakai
 
 # Linguagem e Frameworks
--Java
--Python
--C
+- Java
+- Python
+- C
