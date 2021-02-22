@@ -2,9 +2,10 @@
 esse repositorio guarda os trabalhos da disciplina
 
 # desenvolvedor:
-## Matheus Nakai
+- Matheus Nakai
 
 # Linguagem e Frameworks
 - Java
 - Python
 - C
+- Dart
