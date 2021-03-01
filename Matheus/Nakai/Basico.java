@@ -16,8 +16,8 @@ public class Basico {
         nome="Pikachu";
 
         //exibe os valores das variaveis
-        System.out.println("Nome:" + nome);
+        System.out.println("Nome:" + nome+"\n"+"Pokemon Id: "+ numero);
         System.out.println("Gigantamax: "+ gigantamax);
-        System.out.println("Hp: " +hp+ "\n" + "atk: "+ atk);
+        System.out.println("Hp: " +hp+ "\n" + "Atk: "+ atk);
     }
 }
