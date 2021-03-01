@@ -1,4 +1,4 @@
-package Aula02.Nakai;
+package Matheus.Nakai;
 
 public class Aula02 {
     public static void main(String[] args) {
