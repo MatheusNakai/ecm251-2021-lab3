@@ -6,10 +6,12 @@ import java.util.Scanner;
 public class Sistema {
     private boolean continuarExecucao;
     private Scanner scanner;
+    private Conta conta;
 
     public Sistema() {
         this.continuarExecucao=true;
         this.scanner = new Scanner(System.in);
+        this.conta=new Conta(1234,1000,"Toad");
     }
 
     public void executar() {
@@ -26,6 +28,25 @@ public class Sistema {
             case 0:
                 System.out.println("Obrigado por ter utilizado nosso sistem!" );
                 this.continuarExecucao=false;
+                break;
+            case 1:
+                System.out.println("Saldo: R$"+this.conta.getSaldo());
+                break;
+            case 2:
+                System.out.println("Informe o valor:");
+                double valorParaDepositar = scanner.nextDouble();
+                this.conta.depositar(valorParaDepositar);
+                System.out.println("Operacao realizada com sucesso");
+                break;
+            case 3:
+                System.out.println("Informe o valor:");
+                double valorParaRetirar = scanner.nextDouble();
+                if(this.conta.sacar(valorParaRetirar)){
+                    System.out.println("Operacao realizada com sucesso!");
+                }
+                else {
+                    System.out.println("Operacao falhou!");
+                }
                 break;
             default:
                 System.out.println("Funcionalidade ainda nao implementada");

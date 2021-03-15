@@ -1,8 +1,12 @@
 package Nakai.company;
 
 public class Cliente {
-    String titular;
-    String cpf;
+    private String titular;
+    private String cpf;
+
+    public Cliente(String titular) {
+        this.titular = titular;
+    }
 
     @Override
     public String toString() {
