@@ -65,7 +65,7 @@ public class Sistema {
                     System.out.println("Nao foi possivel realizar pagamento!");
                 }
             default:
-                System.out.println("Funcionalidade ainda nao implementada");
+                System.out.println("Funcionalidade ainda nao implementada!");
         }
     }
 
