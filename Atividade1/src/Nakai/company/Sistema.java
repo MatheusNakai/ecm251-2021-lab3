@@ -18,5 +18,10 @@ public class Sistema {
         }
     }
 
+    private void avaliarOpcao(int opcao) {
+        switch (opcao){
+
+        }
+    }
 }
 
