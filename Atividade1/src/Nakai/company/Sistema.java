@@ -10,6 +10,13 @@ public class Sistema {
         this.continuarExecucao=true;
         this.scanner = new Scanner(System.in);
     }
+    public void executar{
 
+        while(continuarExecucao){
+            int opcao =scanner.nextInt();
+            avaliarOpcao(opcao);
+        }
+    }
 
 }
+
