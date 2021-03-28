@@ -10,5 +10,7 @@ public class Conta {
         this.saldo = saldo;
         this.usuario = usuario;
     }
-
+    public double getSaldo(){
+        return this.saldo;
+    }
 }
