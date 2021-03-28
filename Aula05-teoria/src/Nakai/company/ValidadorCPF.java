@@ -27,9 +27,11 @@ public class ValidadorCPF {
         }
 
         //Validacao do primeiro e do segundo digito
-        if (validarDigito(multiplicadoresPrimeiroDigito,cpf)&& validarDigito(multiplicadoresSegundoDigito,cpf));
+        if (validarDigito(multiplicadoresPrimeiroDigito,cpf)&& validarDigito(multiplicadoresSegundoDigito,cpf))
+        {
             return true;
-
+        }
+        return false;
     }
     private static boolean validarDigito(int[]multiplicadores,String cpf){
         int somatoria=0;
