@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Atividade1/Atividade1.iml" filepath="$PROJECT_DIR$/Atividade1/Atividade1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula01/Aula01.iml" filepath="$PROJECT_DIR$/Aula01/Aula01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula03/Aula03.iml" filepath="$PROJECT_DIR$/Aula03/Aula03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula04/Aula04.iml" filepath="$PROJECT_DIR$/Aula04/Aula04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula05/Aula05.iml" filepath="$PROJECT_DIR$/Aula05/Aula05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula05-teoria/Aula05-teoria.iml" filepath="$PROJECT_DIR$/Aula05-teoria/Aula05-teoria.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ecm251-2021-lab3.iml" filepath="$PROJECT_DIR$/ecm251-2021-lab3.iml" />
+    </modules>
+  </component>
+</project>
