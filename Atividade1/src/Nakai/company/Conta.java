@@ -23,4 +23,11 @@ public class Conta {
         }
         return false;
     }
+    boolean transferirPara(double valor, Conta destino){
+        if(sacar(valor)){
+            destino.depositar(valor);
+            return true;
+        }
+        return false;
+    }
 }
