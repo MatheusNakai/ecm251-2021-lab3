@@ -1,11 +1,14 @@
 package Nakai.company;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Sistema {
     private boolean continuarExecucao = true;
     private Scanner scanner;
     private Conta conta;
+    List<Usuario> ListaDeUsuario = new ArrayList<>();
 
     public Sistema(){
         this.continuarExecucao=true;
@@ -30,11 +33,15 @@ public class Sistema {
                 String email= scanner.nextLine();
                 System.out.println("Insira uma senha:");
                 String senha= scanner.nextLine();
-                new Usuario(name,cpf,senha,email);
+                Usuario usuario = new Usuario(name, cpf, senha, email);
+                ListaDeUsuario.add(usuario);
+            case 2:
+
         }
     }
     public void exibirMenu{
         System.out.println("1 - Para criar Usuario.");
+        System.out.println("2 - Criar uma Conta.");
     }
 }
 
