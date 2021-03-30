@@ -51,5 +51,18 @@ public class Conta {
         return this.Dono.nomeInteiro;
     }
 
+    public boolean transferirDinheiro(String s){
+        String[] dados=s.split(";");
+        int idContaDestino= Integer.parseInt(dados[0]);
+        String UsuarioDestino = dados[1];
+        double valor = Double.parseDouble(dados[2]);
+        int idTransacao = Integer.parseInt(dados[3]);
+
+        if (this.sacar(valor)){
+            Conta.getContaPorId(idContaDestino).depositar(valor);
+            return true;
+        }
+        return false;
+    }
 
 }
