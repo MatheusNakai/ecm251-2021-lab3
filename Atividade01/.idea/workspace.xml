@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff8fb1bf-938e-4df7-a652-c8c640eebb2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Aula05-teoria/out/production/Aula05-teoria/Nakai/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula05-teoria/out/production/Aula05-teoria/Nakai/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Aula05-teoria/out/production/Aula05-teoria/Nakai/company/ValidadorCPF.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula05-teoria/out/production/Aula05-teoria/Nakai/company/ValidadorCPF.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Aula05-teoria/src/Nakai/company/ValidadorCPF.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula05-teoria/src/Nakai/company/ValidadorCPF.java" afterDir="false" />
+    <list default="true" id="351a68ab-42c2-44c7-9996-7af91eadf791" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/Atividade1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/out/production/Atividade1/Nakai/company/Conta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/out/production/Atividade1/Nakai/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/out/production/Atividade1/Nakai/company/Sistema.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/out/production/Atividade1/Nakai/company/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/src/Nakai/company/Conta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/src/Nakai/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/src/Nakai/company/Sistema.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/src/Nakai/company/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula05/out/production/Aula03/Nakai/company/Sistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula05/out/production/Aula03/Nakai/company/Sistema.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1qBQNC0sdkydgQVx7M1UtptJjfm" />
+  <component name="ProjectId" id="1qRo2J04887iYf3hXGmMuJK02mP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -97,11 +105,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ff8fb1bf-938e-4df7-a652-c8c640eebb2e" name="Default Changelist" comment="" />
-      <created>1616550463337</created>
+      <changelist id="351a68ab-42c2-44c7-9996-7af91eadf791" name="Default Changelist" comment="" />
+      <created>1617051557839</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1616550463337</updated>
+      <updated>1617051557839</updated>
     </task>
     <servers />
   </component>
@@ -115,6 +123,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
