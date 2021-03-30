@@ -17,13 +17,16 @@ public class Sistema {
                     Sistema.MainMenu= scanner.nextInt();
                     break;
                 case 1:
-                    if(Sistema.usuarioLogado==null){
-                        Sistema.usuarioLogado=null;
+                    System.out.println("Informe os dados a seguir para criar usuario:");
+                    System.out.println("Nome de Usuario:");
+                    String nomeUsuarioConta=scanner.next();
+
+
 
                     }
             }
         }
-    }
+
 
     public static void mostrarMainMenu(){
         System.out.println("Por favor, escolha uma opção:");

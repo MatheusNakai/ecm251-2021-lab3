@@ -9,6 +9,15 @@ public class Usuario {
     private String senha;
     private ArrayList<Conta> contas=new ArrayList<>();
 
+    public Usuario(String nomeInteiro, String email, String senha) {
+        if(UsuarioExistente(nomeInteiro)){
+            this.nomeInteiro = nomeInteiro;
+            this.email = email;
+            this.senha = senha;
+            
+        }
+
+    }
 
     public boolean UsuarioExistente(String nome){ //auxilio de Bruno Villardi
         for (Usuario i : Usuario.usuarios){
