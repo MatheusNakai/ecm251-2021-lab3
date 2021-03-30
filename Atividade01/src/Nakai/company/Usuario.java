@@ -7,7 +7,7 @@ public class Usuario {
     public String nomeInteiro;
     public String email;
     private String senha;
-
+    private ArrayList<Conta> contas=new ArrayList<>();
 
 
     public boolean UsuarioExistente(String nome){ //auxilio de Bruno Villardi
@@ -18,7 +18,7 @@ public class Usuario {
         }
         return true;
     }
-    public Usuario getNomedoUsuario (String nome){
+    public static Usuario getNomedoUsuario (String nome){
         for (Usuario i:Usuario.usuarios){
             if(i.nomeInteiro.equals(nome)){
                 return i;
@@ -27,4 +27,24 @@ public class Usuario {
         return null;
     }
 
+    public static boolean login(String nome, String senha){
+        Usuario u=Usuario.getNomedoUsuario(nome);
+        if(u==null){
+            return false;
+        }
+        if (senha.equals(u.senha)){
+            Sistema.usuarioLogado=u;
+            return true;
+        }
+        return false;
+    }
+
+    public boolean atribuirCOnta(Conta conta){
+        this.contas.add(conta);
+        return true;
+    }
+
+    public static ArrayList<Conta> getContas(Usuario usuarioLogado){
+        return usuarioLogado.contas;
+    }
 }
