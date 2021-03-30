@@ -14,7 +14,10 @@ public class Usuario {
             this.nomeInteiro = nomeInteiro;
             this.email = email;
             this.senha = senha;
-            
+            Usuario.usuarios.add(this);
+            System.out.println("Usuario "+nomeInteiro+" criado com sucesso.");
+        }else{
+            System.out.println("Nao foi possivel criar Usuario.");
         }
 
     }

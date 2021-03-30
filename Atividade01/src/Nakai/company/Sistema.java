@@ -20,9 +20,20 @@ public class Sistema {
                     System.out.println("Informe os dados a seguir para criar usuario:");
                     System.out.println("Nome de Usuario:");
                     String nomeUsuarioConta=scanner.next();
+                    System.out.println("Senha:");
+                    String senha = scanner.next();
+                    System.out.println("email:");
+                    String email = scanner.next();
 
+                    new Usuario(nomeUsuarioConta,email,senha);
 
-
+                    break;
+                case 2:
+                    if(Sistema.usuarioLogado==null){
+                        login(scanner);
+                    }else{
+                        
+                    }
                     }
             }
         }
