@@ -9,7 +9,14 @@ public class Conta {
     private static ArrayList<Conta> contas = new ArrayList<>(); //Armazena Contas criadas
     private Usuario Dono;
 
-
+    public Conta(int idConta, double saldo, Usuario dono) {
+        this.idConta = idConta;
+        this.saldo = saldo;
+        Dono = dono;
+        Dono.atribuirCOnta(this);
+        controlador++;
+        System.out.println("Nova Conta ("+idConta+") de "+dono.nomeInteiro+"criada com sucesso.");
+    }
 
     private void depositar(double valor){
         this.saldo+=valor;
