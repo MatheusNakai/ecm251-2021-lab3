@@ -9,8 +9,19 @@ public class Conta {
     private static ArrayList<Conta> contas = new ArrayList<>(); //Armazena Contas criadas
     private Usuario Dono;
 
+
+
     private void depositar(double valor){
         this.saldo+=valor;
     }
+
+    private boolean sacar(double valor){
+        if(valor<=this.saldo){
+            this.saldo-=valor;
+            return true;
+        }
+        return false;
+    }
+
 
 }
