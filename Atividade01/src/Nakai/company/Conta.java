@@ -31,4 +31,17 @@ public class Conta {
         }
         return null;
     }
+
+    public static boolean compararId(int id, String nome){
+        Conta conta = getContaPorId(id);
+        if(conta==null){
+            return false;
+        }
+        return conta.Dono.nomeInteiro.equals(nome);
+    }
+
+    public String getNomeDono(){
+        return this.Dono.nomeInteiro;
+    }
+
 }
