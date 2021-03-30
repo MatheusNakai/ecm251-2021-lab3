@@ -32,7 +32,7 @@ public class Sistema {
                     if(Sistema.usuarioLogado==null){
                         login(scanner);
                     }else{
-                        
+
                     }
                     }
             }
@@ -75,5 +75,14 @@ public class Sistema {
         Sistema.MainMenu=0;
         Sistema.LogedMenu=0;
         System.out.println("Usuario deslogado.");
+    }
+    private static void mostrarMenuDeUsuario(){
+        System.out.println("Bem-vindo "+usuarioLogado.nomeInteiro+".");
+        System.out.println("Escolha uma das opcoes:");
+        System.out.println("1 - Exibir minhas contas");
+        System.out.println("2 - Criar pedido de transferencia");
+        System.out.println("3 - Realizar tranferência");
+        System.out.println("4 - Criar Conta.");
+        System.out.println("5 - Logout");
     }
 }
