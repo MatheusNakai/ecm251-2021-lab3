@@ -18,6 +18,13 @@ public class Usuario {
         }
         return true;
     }
-
+    public Usuario getNomedoUsuario (String nome){
+        for (Usuario i:Usuario.usuarios){
+            if(i.nomeInteiro.equals(nome)){
+                return i;
+            }
+        }
+        return null;
+    }
 
 }
