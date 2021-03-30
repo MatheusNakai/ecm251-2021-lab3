@@ -129,7 +129,9 @@ public class Sistema {
                 System.out.println("Digite o id da conta para realizar o pagamento:");
                 int idPagadouro = scanner.nextInt();
 
-                if(!Sistema.usuarioLogado.)
+                if(!Sistema.usuarioLogado.verificacaContaId(idPagadouro)){
+                    
+                }
 
     }
     }
