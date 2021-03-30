@@ -2,29 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="351a68ab-42c2-44c7-9996-7af91eadf791" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Nakai/company/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atividade1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atividade1/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atividade1/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atividade1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atividade1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atividade1/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atividade1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atividade1/Atividade1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atividade1/out/production/Atividade1/Nakai/company/Conta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atividade1/out/production/Atividade1/Nakai/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atividade1/out/production/Atividade1/Nakai/company/Sistema.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atividade1/out/production/Atividade1/Nakai/company/Usuario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atividade1/src/Nakai/company/Conta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atividade1/src/Nakai/company/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atividade1/src/Nakai/company/Sistema.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atividade1/src/Nakai/company/Usuario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Aula05/out/production/Aula03/Nakai/company/Sistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula05/out/production/Aula03/Nakai/company/Sistema.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -123,5 +114,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
