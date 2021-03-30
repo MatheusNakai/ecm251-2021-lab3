@@ -85,4 +85,24 @@ public class Sistema {
         System.out.println("4 - Criar Conta.");
         System.out.println("5 - Logout");
     }
+    private static void ExecucaComandoUsuario(Scanner scanner){
+        switch (Sistema.LogedMenu){
+        case 1:
+            System.out.println(Usuario.getContas(Sistema.usuarioLogado));
+            break;
+        case 2:
+            System.out.println("Suas contas disponiveis:");
+            System.out.println(Usuario.getContas(Sistema.usuarioLogado));
+            int IdRecebedor = scanner.nextInt();
+
+            if(!Sistema.usuarioLogado.verificacaContaId(IdRecebedor)){
+                System.out.println("Voce Nao possui Conta com "+IdRecebedor+".");
+                break;
+            }
+            System.out.println("Porfavor informe o valor:");
+            double valorTransferido = scanner.nextDouble();
+
+
+    }
+    }
 }
