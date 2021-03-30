@@ -18,7 +18,7 @@ public class Conta {
         System.out.println("Nova Conta ("+idConta+") de "+Dono.nomeInteiro+" criada com sucesso.");
     }
 
-    private void depositar(double valor){
+    private  void depositar(double valor){
         this.saldo+=valor;
     }
 
@@ -30,17 +30,21 @@ public class Conta {
         return false;
     }
 
-    public static Conta getContaPorId (int id){
+    public static Conta getConta (int id){
         for (Conta i:Conta.contas){
             if (i.idConta==id){
                 return i;
             }
+            else{
+                return null;
+            }
         }
         return null;
+
     }
 
     public static boolean compararId(int id, String nome){
-        Conta conta = getContaPorId(id);
+        Conta conta = getConta(id);
         if(conta==null){
             return false;
         }
@@ -59,7 +63,7 @@ public class Conta {
         int idTransacao = Integer.parseInt(dados[3]);
 
         if (this.sacar(valor)){
-            Conta.getContaPorId(idContaDestino).depositar(valor);
+            Conta.getConta(idContaDestino).depositar(valor);
             return true;
         }
         return false;
