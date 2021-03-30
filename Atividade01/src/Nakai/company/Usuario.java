@@ -52,8 +52,8 @@ public class Usuario {
             if(i.idConta==idContaRecebedora){
                 return true;
             }
-            return false;
-        }
 
+        }
+        return false;
     }
 }
