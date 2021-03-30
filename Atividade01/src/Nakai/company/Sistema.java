@@ -32,9 +32,17 @@ public class Sistema {
                     if(Sistema.usuarioLogado==null){
                         login(scanner);
                     }else{
+                        mostrarMenuDeUsuario(scanner);
+                        ExecucaComandoUsuario(scanner);
+                    }
+                    break;
+                default:
+                    System.out.println("Opcao ainda nao implementada.");
+                    Sistema.MainMenu=0;
+                    break;
 
-                    }
-                    }
+            }
+
             }
         }
 
@@ -76,7 +84,7 @@ public class Sistema {
         Sistema.LogedMenu=0;
         System.out.println("Usuario deslogado.");
     }
-    private static void mostrarMenuDeUsuario(){
+    private static void mostrarMenuDeUsuario(Scanner scanner){
         System.out.println("Bem-vindo "+usuarioLogado.nomeInteiro+".");
         System.out.println("Escolha uma das opcoes:");
         System.out.println("1 - Exibir minhas contas");
@@ -84,24 +92,44 @@ public class Sistema {
         System.out.println("3 - Realizar tranferência");
         System.out.println("4 - Criar Conta.");
         System.out.println("5 - Logout");
+        Sistema.LogedMenu=scanner.nextInt();
     }
     private static void ExecucaComandoUsuario(Scanner scanner){
         switch (Sistema.LogedMenu){
-        case 1:
-            System.out.println(Usuario.getContas(Sistema.usuarioLogado));
-            break;
-        case 2:
-            System.out.println("Suas contas disponiveis:");
-            System.out.println(Usuario.getContas(Sistema.usuarioLogado));
-            int IdRecebedor = scanner.nextInt();
-
-            if(!Sistema.usuarioLogado.verificacaContaId(IdRecebedor)){
-                System.out.println("Voce Nao possui Conta com "+IdRecebedor+".");
+            case 1:
+                System.out.println(Usuario.getContas(Sistema.usuarioLogado));
                 break;
-            }
-            System.out.println("Porfavor informe o valor:");
-            double valorTransferido = scanner.nextDouble();
+            case 2:
+                System.out.println("Suas contas disponiveis:");
+                System.out.println(Usuario.getContas(Sistema.usuarioLogado));
+                int IdRecebedor = scanner.nextInt();
 
+                if(!Sistema.usuarioLogado.verificacaContaId(IdRecebedor)){
+                    System.out.println("Voce Nao possui Conta com "+IdRecebedor+".");
+                    break;
+                }
+                System.out.println("Porfavor informe o valor:");
+                double valorTransferido = scanner.nextDouble();
+
+                String novoPedido=Transferencia.gerarString(Sistema.usuarioLogado.getContaPeloId(IdRecebedor),valorTransferido);
+                System.out.println("String para pagament:"+novoPedido);
+                break;
+            case 3:
+                System.out.println("Para realizar a transferencia informe:");
+                System.out.println("String do pedido de transferencia:");
+                String pedidoTransferencia = scanner.next();
+
+                if(!Transferencia.validarString(pedidoTransferencia)){
+                    System.out.println("Pedido invalido. Verifique se o pedido esta no padrao (<Id>;<Nome>;<Valor>;<QR>");
+                    break;
+                }
+
+                System.out.println("Conta disponiveis:");
+                System.out.println(Usuario.getContas(Sistema.usuarioLogado));
+                System.out.println("Digite o id da conta para realizar o pagamento:");
+                int idPagadouro = scanner.nextInt();
+
+                if(!Sistema.usuarioLogado.)
 
     }
     }

@@ -68,4 +68,12 @@ public class Usuario {
         }
         return false;
     }
+    public Conta getContaPeloId(int id){
+        for (Conta i:this.contas){
+            if(i.idConta==id){
+                return i;
+            }
+        }
+        return null;
+    }
 }
