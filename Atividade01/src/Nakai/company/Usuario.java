@@ -76,4 +76,15 @@ public class Usuario {
         }
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "nomeInteiro='" + nomeInteiro + '\'' +
+                ", email='" + email + '\'' +
+                ", senha='" + senha + '\'' +
+                ", contas=" + contas +
+                '}';
+    }
 }
+

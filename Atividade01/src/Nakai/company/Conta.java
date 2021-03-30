@@ -10,12 +10,12 @@ public class Conta {
     private Usuario Dono;
 
     public Conta(double saldo, Usuario dono) {
-        this.idConta = idConta;
+        this.idConta = controlador;
         this.saldo = saldo;
         Dono = dono;
         Dono.atribuirCOnta(this);
         controlador++;
-        System.out.println("Nova Conta ("+idConta+") de "+dono.nomeInteiro+" criada com sucesso.");
+        System.out.println("Nova Conta ("+idConta+") de "+Dono.nomeInteiro+" criada com sucesso.");
     }
 
     private void depositar(double valor){
@@ -65,4 +65,13 @@ public class Conta {
         return false;
     }
 
+
+    @Override
+    public String toString() {
+        return "Conta{" +
+                "idConta=" + idConta +
+                ", saldo=" + saldo +
+                ", Dono=" + Dono.nomeInteiro +
+                '}';
+    }
 }
