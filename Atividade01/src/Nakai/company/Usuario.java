@@ -47,4 +47,13 @@ public class Usuario {
     public static ArrayList<Conta> getContas(Usuario usuarioLogado){
         return usuarioLogado.contas;
     }
+    public boolean verificacaContaId(int idContaRecebedora){//Verifica se usuario possui tal conta
+        for (Conta i:this.contas){
+            if(i.idConta==idContaRecebedora){
+                return true;
+            }
+            return false;
+        }
+
+    }
 }
