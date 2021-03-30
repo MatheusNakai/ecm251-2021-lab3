@@ -130,9 +130,23 @@ public class Sistema {
                 int idPagadouro = scanner.nextInt();
 
                 if(!Sistema.usuarioLogado.verificacaContaId(idPagadouro)){
-
+                    System.out.println("Usuario "+Sistema.usuarioLogado.nomeInteiro+" nao possui conta com id "+idPagadouro);
+                    break;
                 }
 
-    }
+                if (Transferencia.Transacao(Sistema.usuarioLogado.getContaPeloId(idPagadouro),pedidoTransferencia)){
+                    System.out.println("Traseferencia realizada com sucesso.");
+                }else {
+                    System.out.println("Nao foi possivel realizar transacao.");
+                }
+                break;
+            case 4:
+                logout();
+                break;
+            default:
+                System.out.println("Funcao nao implementada");
+                Sistema.LogedMenu= 0;
+                break;
+        }
     }
 }
