@@ -23,5 +23,12 @@ public class Conta {
         return false;
     }
 
-
+    public static Conta getContaPorId (int id){
+        for (Conta i:Conta.contas){
+            if (i.idConta==id){
+                return i;
+            }
+        }
+        return null;
+    }
 }
