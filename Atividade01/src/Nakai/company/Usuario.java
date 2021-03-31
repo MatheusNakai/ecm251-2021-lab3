@@ -7,7 +7,7 @@ public class Usuario {
     public String nomeInteiro;
     public String email;
     private String senha;
-    private ArrayList<Conta> contas=new ArrayList<>();
+    public ArrayList<Conta> contas=new ArrayList<>();
 
     public Usuario(String nomeInteiro, String email, String senha) {
         if(UsuarioExistente(nomeInteiro)){
@@ -22,7 +22,7 @@ public class Usuario {
 
     }
 
-    public boolean UsuarioExistente(String nome){ //auxilio de Bruno Villardi
+    public static boolean UsuarioExistente(String nome){ //auxilio de Bruno Villardi
         for (Usuario i : Usuario.usuarios){
             if(i.nomeInteiro.equals(nome)){
                 return false;
@@ -51,7 +51,8 @@ public class Usuario {
         return false;
     }
 
-    public boolean atribuirCOnta(Conta conta){
+    public boolean atribuirConta(Conta conta){
+        contas=new ArrayList<Conta>();
         this.contas.add(conta);
         return true;
     }

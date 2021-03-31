@@ -24,6 +24,7 @@ public class Sistema {
                     String senha = scanner.next();
                     System.out.println("email:");
                     String email = scanner.next();
+                    Sistema.MainMenu=0;
 
                     new Usuario(nomeUsuarioConta,email,senha);
 
@@ -98,14 +99,17 @@ public class Sistema {
         switch (Sistema.LogedMenu){
             case 1:
                 System.out.println(Usuario.getContas(Sistema.usuarioLogado));
+                Sistema.LogedMenu= 0;
                 break;
             case 2:
                 System.out.println("Suas contas disponiveis:");
                 System.out.println(Usuario.getContas(Sistema.usuarioLogado));
+                System.out.println("Insira o Id da conta desejada:");
                 int IdRecebedor = scanner.nextInt();
 
                 if(!Sistema.usuarioLogado.verificacaContaId(IdRecebedor)){
                     System.out.println("Voce Nao possui Conta com "+IdRecebedor+".");
+                    Sistema.LogedMenu= 0;
                     break;
                 }
                 System.out.println("Porfavor informe o valor:");
@@ -113,6 +117,7 @@ public class Sistema {
 
                 String novoPedido=Transferencia.gerarString(Sistema.usuarioLogado.getContaPeloId(IdRecebedor),valorTransferido);
                 System.out.println("String para pagament:"+novoPedido);
+                Sistema.LogedMenu= 0;
                 break;
             case 3:
                 System.out.println("Para realizar a transferencia informe:");
@@ -121,6 +126,7 @@ public class Sistema {
 
                 if(!Transferencia.validarString(pedidoTransferencia)){
                     System.out.println("Pedido invalido. Verifique se o pedido esta no padrao (<Id>;<Nome>;<Valor>;<QR>");
+                    Sistema.LogedMenu= 0;
                     break;
                 }
 
@@ -131,6 +137,7 @@ public class Sistema {
 
                 if(!Sistema.usuarioLogado.verificacaContaId(idPagadouro)){
                     System.out.println("Usuario "+Sistema.usuarioLogado.nomeInteiro+" nao possui conta com id "+idPagadouro);
+                    Sistema.LogedMenu= 0;
                     break;
                 }
 
@@ -139,8 +146,25 @@ public class Sistema {
                 }else {
                     System.out.println("Nao foi possivel realizar transacao.");
                 }
+                Sistema.LogedMenu= 0;
                 break;
+
             case 4:
+                System.out.println("Informe os seguintes:");
+                System.out.println("Nome do Usuario da conta:");
+                String nomeConta= scanner.next();
+                if(Usuario.UsuarioExistente(nomeConta)){
+                    System.out.println("Usuario nao existe");
+                    Sistema.LogedMenu= 0;
+                    break;
+                }
+                System.out.println("Saldo inicial:");
+                double saldoInicial= scanner.nextDouble();
+
+                new Conta(saldoInicial,Usuario.getNomedoUsuario(nomeConta));
+                Sistema.LogedMenu= 0;
+                break;
+            case 5:
                 logout();
                 break;
             default:

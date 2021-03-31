@@ -13,7 +13,8 @@ public class Conta {
         this.idConta = controlador;
         this.saldo = saldo;
         Dono = dono;
-        Dono.atribuirCOnta(this);
+        Dono.atribuirConta(this);
+        Conta.contas.add(this);
         controlador++;
         System.out.println("Nova Conta ("+idConta+") de "+Dono.nomeInteiro+" criada com sucesso.");
     }
@@ -22,7 +23,7 @@ public class Conta {
         this.saldo+=valor;
     }
 
-    private boolean sacar(double valor){
+    public boolean sacar(double valor){
         if(valor<=this.saldo){
             this.saldo-=valor;
             return true;
@@ -31,17 +32,15 @@ public class Conta {
     }
 
     public static Conta getConta (int id){
-        for (Conta i:Conta.contas){
-            if (i.idConta==id){
+        for(Conta i:Conta.contas){
+            System.out.println(i);
+            if(i.idConta==id){
                 return i;
-            }
-            else{
-                return null;
             }
         }
         return null;
-
     }
+
 
     public static boolean compararId(int id, String nome){
         Conta conta = getConta(id);
@@ -63,12 +62,19 @@ public class Conta {
         int idTransacao = Integer.parseInt(dados[3]);
 
         if (this.sacar(valor)){
+            //System.out.println(getConta(idContaDestino));
             Conta.getConta(idContaDestino).depositar(valor);
             return true;
         }
         return false;
     }
 
+    public boolean Idcomparador(int id){
+        if(this.idConta!=id){
+            return false;
+        }
+        return true;
+    }
 
     @Override
     public String toString() {

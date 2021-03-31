@@ -57,5 +57,8 @@ public class Main {
         System.out.println(contaMiskif);
         System.out.println(contaXqC);
         System.out.println("Transferencia concluida: "+resultado);
+
+        System.out.println("-------------------------------------------------------------------------------");
+        Sistema.run();
     }
 }
