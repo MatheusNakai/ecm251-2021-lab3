@@ -152,12 +152,16 @@ public class Sistema {
             case 4:
                 System.out.println("Informe os seguintes:");
                 System.out.println("Nome do Usuario da conta:");
-                String nomeConta= scanner.next();
-                if(Usuario.UsuarioExistente(nomeConta)){
+                String nomeUsuario= scanner.next();
+
+                if(Usuario.UsuarioExistente(nomeUsuario)){
                     System.out.println("Usuario nao existe");
                     Sistema.LogedMenu= 0;
                     break;
                 }
+                System.out.println("Nome da Conta:");
+                String nomeConta=scanner.next();
+
                 System.out.println("Saldo inicial:");
                 double saldoInicial= scanner.nextDouble();
 
