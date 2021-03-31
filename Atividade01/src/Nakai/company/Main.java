@@ -1,7 +1,8 @@
 package Nakai.company;
 
 public class Main {
-
+//Nome: Matheus Takahashi Nakai
+//Ra: 19.01355-8
     public static void main(String[] args) {
 	// write your code here
     Usuario Asmongold= new Usuario("Asmongold","Asmongol@twitch.tv","test123");
