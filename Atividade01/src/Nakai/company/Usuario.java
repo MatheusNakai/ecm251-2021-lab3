@@ -52,7 +52,6 @@ public class Usuario {
     }
 
     public boolean atribuirConta(Conta conta){
-        contas=new ArrayList<Conta>();
         this.contas.add(conta);
         return true;
     }

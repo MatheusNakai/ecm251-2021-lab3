@@ -98,7 +98,7 @@ public class Sistema {
     private static void ExecucaComandoUsuario(Scanner scanner){
         switch (Sistema.LogedMenu){
             case 1:
-                System.out.println(Usuario.getContas(Sistema.usuarioLogado));
+                System.out.println(Usuario.getContas(usuarioLogado));
                 Sistema.LogedMenu= 0;
                 break;
             case 2:
@@ -163,7 +163,8 @@ public class Sistema {
                 System.out.println("Saldo inicial:");
                 double saldoInicial= scanner.nextDouble();
 
-                new Conta(saldoInicial,Usuario.getNomedoUsuario(nomeUsuario));
+                Conta conta = new Conta(saldoInicial, Usuario.getNomedoUsuario(nomeUsuario));
+                Usuario.getNomedoUsuario(nomeUsuario).atribuirConta(conta);
                 Sistema.LogedMenu= 0;
                 break;
             case 5:
