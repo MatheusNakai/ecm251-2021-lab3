@@ -159,13 +159,11 @@ public class Sistema {
                     Sistema.LogedMenu= 0;
                     break;
                 }
-                System.out.println("Nome da Conta:");
-                String nomeConta=scanner.next();
 
                 System.out.println("Saldo inicial:");
                 double saldoInicial= scanner.nextDouble();
 
-                new Conta(saldoInicial,Usuario.getNomedoUsuario(nomeConta));
+                new Conta(saldoInicial,Usuario.getNomedoUsuario(nomeUsuario));
                 Sistema.LogedMenu= 0;
                 break;
             case 5:
