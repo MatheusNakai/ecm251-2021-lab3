@@ -6,7 +6,7 @@ public class Conta {
     public int idConta;
     private double saldo;
     private static int controlador=1; //gerencia o id de contas
-    private static ArrayList<Conta> contas = new ArrayList<>(); //Armazena Contas criadas
+    private static ArrayList<Conta> contas = new ArrayList<>(); //Usuario pode ter mais de uma conta
     private Usuario Dono;
 
     public Conta(double saldo, Usuario dono) {

@@ -3,7 +3,7 @@ package Nakai.company;
 import java.util.ArrayList;
 
 public class Usuario {
-    private static ArrayList<Usuario> usuarios= new ArrayList<>(); //armazena usuarios criados
+    private static ArrayList<Usuario> usuarios= new ArrayList<>(); //"Banco de dados" de usuarios
     public String nomeInteiro;
     public String email;
     private String senha;

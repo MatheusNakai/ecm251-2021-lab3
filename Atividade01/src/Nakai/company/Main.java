@@ -28,23 +28,14 @@ public class Main {
 
         System.out.println("Miskif Paga requisicao01");
         boolean resultado = contaMiskif.transferirDinheiro(requisicao01);
-        System.out.println(contaAsmongold);
-        System.out.println(contaMiskif);
-        System.out.println(contaXqC);
         System.out.println("Transferencia concluida: "+resultado);
 
         System.out.println("XqC paga requisicao01");
         resultado=contaXqC.transferirDinheiro(requisicao01);
-        System.out.println(contaAsmongold);
-        System.out.println(contaMiskif);
-        System.out.println(contaXqC);
         System.out.println("Transferencia concluida: "+resultado);
 
         System.out.println("Miskif Paga requisicao01");
         resultado=contaMiskif.transferirDinheiro(requisicao01);
-        System.out.println(contaAsmongold);
-        System.out.println(contaMiskif);
-        System.out.println(contaXqC);
         System.out.println("Transferencia concluida: "+resultado);
 
         System.out.println("Miskif cria requisicao02 de tranferencia (Miskif gera uma operacao de recebimento de 1000)");
