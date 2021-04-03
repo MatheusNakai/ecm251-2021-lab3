@@ -1,5 +1,6 @@
 package Nakai.company;
-
+//Matheus Takahashi Nakai
+//19.01355-8
 import java.util.Random;
 
 public class Transferencia {
