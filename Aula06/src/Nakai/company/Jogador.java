@@ -12,25 +12,27 @@ public class Jogador {
 
     public Jogador(String nome) {
         this.nome = nome;
-        ehHumano=false;
+        this.ehHumano = false;
     }
 
     public String getNome() {
-        if (isEhHumano())
-            return nome;
-        return "(BOT)"+nome;
+        return nome;
     }
 
     public boolean isEhHumano() {
         return ehHumano;
     }
 
+    public Jogada getJogada() {
+        return jogada;
+    }
+
+    public void setJogada(Jogada jogada) {
+        this.jogada = jogada;
+    }
+
     @Override
     public String toString() {
         return getNome();
-    }
-
-    public Jogada getJogada() {
-        return jogada;
     }
 }

@@ -1,8 +1,8 @@
 package Nakai.company;
 
 public class Jogada {
-    public Resultado verificaResultado(Jogada jogada){
-        if (verificaSeGanhei(jogada)){
+    public Resultado verificaResultado(Jogada jogada) {
+        if(verificaSeGanhei(jogada)){
             return Resultado.GANHEI;
         }
         if(verificaSePerdi(jogada)){
@@ -18,5 +18,4 @@ public class Jogada {
     public boolean verificaSePerdi(Jogada jogada){
         return true;
     }
-
 }
