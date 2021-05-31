@@ -1,0 +1,4 @@
+pocao,200
+funko pop, 300
+manga, 15
+booster, 8
