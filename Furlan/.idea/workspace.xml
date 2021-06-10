@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="351a68ab-42c2-44c7-9996-7af91eadf791" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cb2f35fe-a8d5-408c-a2e5-49a5b848eb60" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Atividade9/src/br/maua/ListaLigada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Atividade01/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1qRo2J04887iYf3hXGmMuJK02mP" />
+  <component name="ProjectId" id="1tMtFmhoNbMqxxsnN2NoCqGJ3y2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -81,15 +82,19 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Furlan" />
+    <property name="last.edited.regexp" value="Sample Text" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="ml.local.models.training.notification.expired" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Nakai.company.Main" />
-      <module name="Atividade01" />
+      <option name="MAIN_CLASS_NAME" value="br.maua.Main" />
+      <module name="Furlan" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -106,13 +111,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="351a68ab-42c2-44c7-9996-7af91eadf791" name="Default Changelist" comment="" />
-      <created>1617051557839</created>
+      <changelist id="cb2f35fe-a8d5-408c-a2e5-49a5b848eb60" name="Default Changelist" comment="" />
+      <created>1622590686442</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1617051557839</updated>
-      <workItem from="1622591621757" duration="63000" />
-      <workItem from="1622591906368" duration="37000" />
+      <updated>1622590686442</updated>
+      <workItem from="1622590687805" duration="925000" />
+      <workItem from="1622591687651" duration="215000" />
+      <workItem from="1622591947848" duration="646000" />
+      <workItem from="1623092309585" duration="89000" />
+      <workItem from="1623347096297" duration="329000" />
     </task>
     <servers />
   </component>
@@ -129,6 +137,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
