@@ -1,10 +1,12 @@
 package br.maua;
 
+import br.maua.pessoa.Pintor;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        V1 a = new V2();
-        System.out.printf("%.1f", a.mv2(2));
+        Pintor pintor=new Pintor("antonio",123,"312");
+        System.out.printf(pintor.descricao());
     }
 }
