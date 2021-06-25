@@ -4,6 +4,7 @@ import br.maua.enums.Funcao;
 import br.maua.enums.Horario;
 import br.maua.membros.*;
 
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Scanner;
@@ -228,5 +229,13 @@ public class Sistema {
             System.out.println(membro.apresentar());
         }
 
+    }
+
+    public void criarArquivo(String funcao, String nome, int id) throws Exception {
+
+        FileWriter escreveArquivo = new FileWriter("arquivo_super_Secreto_nao_abrir.csv");
+        String dadosUsuario = funcao + ";" + nome + ";" + Integer.toString(id);
+        escreveArquivo.write(dadosUsuario);
+        escreveArquivo.close();
     }
 }
