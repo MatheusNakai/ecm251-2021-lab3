@@ -17,6 +17,78 @@ public class Sistema {
     ArrayList<Membro> listaScriptGuys = new ArrayList<>();
     ArrayList<Membro> listaBigBrothers = new ArrayList<>();
 
+    public void run(){
+        int opMenu = 0;
+        int idUsuario;
+        String nicknameUsuario;
+        String funcaoUsuario;
+
+        System.out.println("------Bem vindo ao gerenciador da MAsK_S0c13ty------");
+        System.out.println("Insira seu nickname:");
+        nicknameUsuario = scanner.next();
+        System.out.println("Insira sua funcao:");
+        funcaoUsuario = scanner.next();
+        System.out.println("Insira seu Id:");
+        idUsuario = scanner.nextInt();
+        try{
+            criarArquivo(funcaoUsuario,nicknameUsuario,idUsuario);
+        }
+        catch (Exception exception){
+            System.out.println("Falha ao tentar criar arquivo!");
+        }
+        Horario horarioSistema = getHorario();
+
+        while(opMenu!=6){
+            System.out.println("--------------------------Menu---------------------------");
+            System.out.println("Horario de trabalho: "+horarioSistema);
+            System.out.println("1 - Trocar horario");
+            System.out.println("2 - Adicionar membros");
+            System.out.println("3 - Remover membros");
+            System.out.println("4 - Postar mensagens dos membros");
+            System.out.println("5 - Apresentacao dos membros");
+            System.out.println("6 - Sair do Programa");
+
+            opMenu = scanner.nextInt();
+
+            switch (opMenu){
+                case (1):
+                    horarioSistema = trocarHorario(horarioSistema);
+                    break;
+
+                case (2):
+                    criarMemebro();
+                    break;
+
+                case (3):
+                    if(removerMembro()){
+                        System.out.println("Foi possivel remover o membro");
+                    }
+                    else {
+                        System.out.println("Nao foi possivel remover o membro");
+                    }
+                    break;
+
+                case (4):
+                    mensagemdosMembros();
+                    break;
+
+                case (5):
+                    apresentacaodosMembros();
+                    break;
+
+                case (6):
+                    System.out.println("Finalizando o sistema.");
+
+                default:
+                    System.out.println("Funcao nao implementada");
+                    break;
+            }
+
+
+
+        }
+    }
+
     /**
      *
      * @param funcao: String para o auxilio de definir a funcao do funcionario que ira ser criado
@@ -48,7 +120,7 @@ public class Sistema {
      * @return Um membro pertencente a uma das classes filhas de Membro
      */
     private Membro criarMemebro(){
-        System.out.println("Criacao de Membros:\n"+"");
+        System.out.println("Criacao de Membros:\n");
 
         System.out.println("Digite um nickname que deseje utilizar:");
         String nickname = scanner.next();
@@ -238,4 +310,5 @@ public class Sistema {
         escreveArquivo.write(dadosUsuario);
         escreveArquivo.close();
     }
+
 }
