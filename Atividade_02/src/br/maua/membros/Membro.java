@@ -13,12 +13,20 @@ public abstract class Membro {
     // Controlador do id dos Membros
     private static int contador = 1;
 
+    /**
+     * Contrutor do Memebro
+     * @param nickname: Nome do Membro
+     * @param senha: Senha do Membro
+     * @param funcao: Funcao do Memebro
+     */
+
     public Membro(String nickname, String senha, Funcao funcao) {
-        this.id=Membro.contador;
+
         this.nickname = nickname;
         this.senha = senha;
         this.funcao = funcao;
 
+        this.id=Membro.contador;
         Membro.contador++;                                                                                              //Adiciona mais um ao contador para cada Membro criado
     }
 }
