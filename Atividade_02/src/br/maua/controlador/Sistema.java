@@ -17,7 +17,7 @@ public class Sistema {
     ArrayList<Membro> listaScriptGuys = new ArrayList<>();
     ArrayList<Membro> listaBigBrothers = new ArrayList<>();
 
-    public void run(){
+    public void executar(){
         int opMenu = 0;
         int idUsuario;
         String nicknameUsuario;
@@ -306,7 +306,7 @@ public class Sistema {
     public void criarArquivo(String funcao, String nome, int id) throws Exception {
 
         FileWriter escreveArquivo = new FileWriter("arquivo_super_Secreto_nao_abrir.csv");
-        String dadosUsuario = funcao + ";" + nome + ";" + Integer.toString(id);
+        String dadosUsuario = funcao + ";" + nome + ";" + id;
         escreveArquivo.write(dadosUsuario);
         escreveArquivo.close();
     }
