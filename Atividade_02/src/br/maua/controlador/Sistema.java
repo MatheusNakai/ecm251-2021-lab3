@@ -202,8 +202,8 @@ public class Sistema {
                 }
                 System.out.println("Selecione a posicao do membro (Comeca em 1):");
                 int posicao = scanner.nextInt();
-                if(posicao<=listaBigBrothers.size()){
-                    posicao-=1;
+                posicao-=1;
+                if(posicao<listaBigBrothers.size()){
                     listaBigBrothers.remove(posicao);
                     return true;
                 }else{
@@ -219,8 +219,8 @@ public class Sistema {
                 }
                 System.out.println("Selecione a posicao do membro (Comeca em 1):");
                 posicao = scanner.nextInt();
+                posicao-=1;
                 if(posicao<listaHeavyLifters.size()){
-                    posicao-=1;
                     listaHeavyLifters.remove(posicao);
                     return true;
                 }else{
@@ -236,8 +236,9 @@ public class Sistema {
                 }
                 System.out.println("Selecione a posicao do membro (Comeca em 1):");
                 posicao = scanner.nextInt();
+                posicao-=1;
                 if(posicao<listaScriptGuys.size()){
-                    posicao-=1;
+
                     listaScriptGuys.remove(posicao);
                     return true;
                 }else{
@@ -253,8 +254,9 @@ public class Sistema {
                 }
                 System.out.println("Selecione a posicao do membro (Comeca em 1):");
                 posicao = scanner.nextInt();
+                posicao-=1;
                 if(posicao<listaMobileMembers.size()){
-                    posicao-=1;
+
                     listaMobileMembers.remove(posicao);
                     return true;
                 }else{
