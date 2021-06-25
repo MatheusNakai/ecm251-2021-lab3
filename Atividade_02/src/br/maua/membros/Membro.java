@@ -9,7 +9,8 @@ public abstract class Membro {
     protected String senha;
     public static int id;
     protected Funcao funcao;
-
+    protected String assinaturaRegular;
+    protected String assinaturaExtra;
     // Controlador do id dos Membros
     private static int contador = 1;
 
