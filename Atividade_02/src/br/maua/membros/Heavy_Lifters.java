@@ -14,8 +14,7 @@ public class Heavy_Lifters extends Membro{
 
     @Override
     public String apresentar() {
-        String apresenta="Ola eu sou o "+nickname+" da MAsK_S0c13ty, sou um dos Heavy Lifters.";
-        return apresenta;
+        return "Ola eu sou o "+nickname+" da MAsK_S0c13ty, sou um dos Heavy Lifters.";
     }
 
     @Override
