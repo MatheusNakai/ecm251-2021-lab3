@@ -13,7 +13,6 @@ public abstract class Membro implements PostarMensagem, Apresentacao {
     // Atributos compartilhados por todos os Membros
 
     protected String nickname;
-    protected String senha;
     protected String email;
     protected Funcao funcao;
     protected String assinaturaRegular;
@@ -26,16 +25,17 @@ public abstract class Membro implements PostarMensagem, Apresentacao {
     /**
      * Contrutor do Memebro
      * @param nickname: Nome do Membro
-     * @param senha: Senha do Membro
+
      * @param funcao: Funcao do Memebro
+     * @param email: email do Membro
      */
 
-    public Membro(String nickname, String senha, Funcao funcao) {
+    public Membro(String nickname,  Funcao funcao, String email) {
 
         this.nickname = nickname;
-        this.senha = senha;
-        this.funcao = funcao;
 
+        this.funcao = funcao;
+        this.email= email;
         //Adiciona mais um ao contador para cada Membro criado
         this.id=Membro.contador;
         Membro.contador++;

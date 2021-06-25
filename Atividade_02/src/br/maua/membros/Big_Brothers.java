@@ -8,9 +8,10 @@ public class Big_Brothers extends Membro{
     private String assinaturaExtra = "...";
 
 
-    public Big_Brothers(String nickname, String senha, Funcao funcao) {
-        super(nickname, senha, funcao);
+    public Big_Brothers(String nickname, Funcao funcao, String email) {
+        super(nickname,funcao, email);
     }
+
 
     @Override
     public String apresentar() {

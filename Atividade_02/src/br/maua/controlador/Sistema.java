@@ -41,6 +41,10 @@ public class Sistema {
         return null;
     }
 
+    /**
+     * Pega as informacoes do usuario para criar um novo membro
+     * @return Um membro pertencente a uma das classes filhas de Membro
+     */
     private Membro criarMemebro(){
         System.out.println("Criacao de Membros:\n"+"");
 
@@ -49,6 +53,9 @@ public class Sistema {
 
         System.out.println("Digite a senha:");
         String senha = scanner.next();
+
+        System.out.println("Digite o email:");
+        String email = scanner.next();
 
         System.out.println("Digite a Funcao do novo membro:\n(1 - Mobile Member), (2 - Big Brother), (3 - Heavy Lifter), (4 - Script Guy)");
         String role = scanner.next();
@@ -60,22 +67,22 @@ public class Sistema {
         Membro membro;
         switch (funcao){
             case BIG_BROTHER:
-                membro = new Big_Brothers(nickname,senha,funcao);
+                membro = new Big_Brothers(nickname,funcao,email);
                 listaBigBrothers.add(membro);
                 break;
                 
             case HEAVY_LIFTER:
-                membro = new Heavy_Lifters(nickname,senha,funcao);
+                membro = new Heavy_Lifters(nickname,funcao,email);
                 listaHeavyLifters.add(membro);
                 break;
             
             case SCRIPT_GUY:
-                membro = new Script_Guys(nickname,senha,funcao);
+                membro = new Script_Guys(nickname,funcao,email);
                 listaScriptGuys.add(membro);
                 break;
                 
             case MOBILE_MEMBER:
-                membro = new Mobile_Members(nickname,senha,funcao);
+                membro = new Mobile_Members(nickname,funcao,email);
                 listaMobileMembers.add(membro);
                 break;
 

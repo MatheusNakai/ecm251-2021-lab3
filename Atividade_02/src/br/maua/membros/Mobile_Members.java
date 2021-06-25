@@ -8,10 +8,10 @@ public class Mobile_Members extends Membro{
     String assinaturaExtra = "MAsK_S0c13ty";
 
 
-
-    public Mobile_Members(String nickname, String senha, Funcao funcao) {
-        super(nickname, senha, funcao);
+    public Mobile_Members(String nickname, Funcao funcao, String email) {
+        super(nickname, funcao, email);
     }
+
 
     @Override
     public String apresentar() {

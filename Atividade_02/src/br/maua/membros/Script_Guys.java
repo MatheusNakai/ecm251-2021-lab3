@@ -8,9 +8,13 @@ public class Script_Guys extends Membro{
     private String assinaturaExtra = "QU3Ro_S3us_r3curs0s.py";
 
 
-    public Script_Guys(String nickname, String senha, Funcao funcao) {
-        super(nickname, senha, funcao);
+    public Script_Guys(String nickname, Funcao funcao, String email) {
+        super(nickname,  funcao, email);
     }
+
+
+
+
 
     @Override
     public String apresentar() {

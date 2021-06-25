@@ -8,9 +8,10 @@ public class Heavy_Lifters extends Membro{
     private String assinaturaExtra = "N00b_qu3_n_Se_r3pita.bat";
 
 
-    public Heavy_Lifters(String nickname, String senha, Funcao funcao) {
-        super(nickname, senha, funcao);
+    public Heavy_Lifters(String nickname, Funcao funcao, String email) {
+        super(nickname, funcao, email);
     }
+
 
     @Override
     public String apresentar() {
