@@ -209,4 +209,24 @@ public class Sistema {
         }
 
     }
+
+    public void apresentacaodosMembros(){
+        System.out.println("-------------------Mobile Members-------------------");
+        for(Membro membro : listaMobileMembers) {
+            System.out.println(membro.apresentar());
+        }
+        System.out.println("-------------------Heavy Lifters--------------------");
+        for(Membro membro : listaHeavyLifters) {
+            System.out.println(membro.apresentar());
+        }
+        System.out.println("-------------------Script Guys----------------------");
+        for(Membro membro : listaScriptGuys) {
+            System.out.println(membro.apresentar());
+        }
+        System.out.println("-------------------Big Brothers---------------------");
+        for(Membro membro : listaBigBrothers) {
+            System.out.println(membro.apresentar());
+        }
+
+    }
 }
