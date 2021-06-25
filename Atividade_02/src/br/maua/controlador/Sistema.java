@@ -30,9 +30,8 @@ public class Sistema {
                 return Funcao.SCRIPT_GUY;
 
 
-            default:
-                throw new IllegalStateException("Valor Invalido: "+funcao);
         }
+        return null;
     }
 
     private Membro criarMemebro(){
