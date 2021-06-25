@@ -101,4 +101,9 @@ public class Sistema {
         }
         else{return Horario.EXTRA;}
     }
+
+    public Horario trocarHorario(Horario horario){
+        if (horario==Horario.REGULAR){return Horario.EXTRA;}
+        else{return Horario.REGULAR;}
+    }
 }
