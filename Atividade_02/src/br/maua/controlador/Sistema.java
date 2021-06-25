@@ -19,7 +19,7 @@ public class Sistema {
 
     public void executar(){
         int opMenu = 0;
-        int idUsuario;
+        String emailUsuario;
         String nicknameUsuario;
         Funcao funcaoUsuario;
         String tipoUsuario;
@@ -30,10 +30,38 @@ public class Sistema {
         System.out.println("Insira sua funcao (1 - Mobile Member), (2 - Big Brother), (3 - Heavy Lifter), (4 - Script Guy):");
         tipoUsuario = scanner.next();
         funcaoUsuario = tipodeMembro(tipoUsuario);
-        System.out.println("Insira seu Id:");
-        idUsuario = scanner.nextInt();
+        System.out.println("Insira seu email");
+        emailUsuario = scanner.next();
+
+        Membro usuario;
+        switch (funcaoUsuario){
+            case BIG_BROTHER:
+                usuario = new Big_Brothers(nicknameUsuario,funcaoUsuario,emailUsuario);
+                listaBigBrothers.add(usuario);
+                break;
+
+            case HEAVY_LIFTER:
+                usuario = new Heavy_Lifters(nicknameUsuario,funcaoUsuario,emailUsuario);
+                listaHeavyLifters.add(usuario);
+                break;
+
+            case SCRIPT_GUY:
+                usuario = new Script_Guys(nicknameUsuario,funcaoUsuario,emailUsuario);
+                listaScriptGuys.add(usuario);
+                break;
+
+            case MOBILE_MEMBER:
+                usuario = new Mobile_Members(nicknameUsuario,funcaoUsuario,emailUsuario);
+                listaMobileMembers.add(usuario);
+                break;
+
+
+            default:
+                throw new IllegalStateException("Unexpected value: " + funcaoUsuario);
+        }
+
         try{
-            criarArquivo(funcaoUsuario,nicknameUsuario,idUsuario);
+            criarArquivo(funcaoUsuario,nicknameUsuario, usuario.id);
         }
         catch (Exception exception){
             System.out.println("Falha ao tentar criar arquivo!");
