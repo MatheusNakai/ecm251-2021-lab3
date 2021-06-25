@@ -9,6 +9,7 @@ import java.util.Calendar;
 import java.util.Scanner;
 
 public class Sistema {
+    public Horario horaSistema;
     private Scanner scanner= new Scanner(System.in);
     ArrayList<Membro> listaMobileMembers= new ArrayList<>();
     ArrayList<Membro> listaHeavyLifters = new ArrayList<>();
@@ -189,4 +190,23 @@ public class Sistema {
         }
     }
 
+    public void mensagemdosMembros(){
+        System.out.println("-------------------Mobile Members-------------------");
+        for(Membro membro : listaMobileMembers) {
+            System.out.println(membro.postarMensagem(horaSistema));
+        }
+        System.out.println("-------------------Heavy Lifters--------------------");
+        for(Membro membro : listaHeavyLifters) {
+            System.out.println(membro.postarMensagem(horaSistema));
+        }
+        System.out.println("-------------------Script Guys----------------------");
+        for(Membro membro : listaScriptGuys) {
+            System.out.println(membro.postarMensagem(horaSistema));
+        }
+        System.out.println("-------------------Big Brothers---------------------");
+        for(Membro membro : listaBigBrothers) {
+            System.out.println(membro.postarMensagem(horaSistema));
+        }
+
+    }
 }
