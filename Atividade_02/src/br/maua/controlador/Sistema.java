@@ -21,13 +21,15 @@ public class Sistema {
         int opMenu = 0;
         int idUsuario;
         String nicknameUsuario;
-        String funcaoUsuario;
+        Funcao funcaoUsuario;
+        String tipoUsuario;
 
         System.out.println("------Bem vindo ao gerenciador da MAsK_S0c13ty------");
         System.out.println("Insira seu nickname:");
         nicknameUsuario = scanner.next();
-        System.out.println("Insira sua funcao:");
-        funcaoUsuario = scanner.next();
+        System.out.println("Insira sua funcao (1 - Mobile Member), (2 - Big Brother), (3 - Heavy Lifter), (4 - Script Guy):");
+        tipoUsuario = scanner.next();
+        funcaoUsuario = tipodeMembro(tipoUsuario);
         System.out.println("Insira seu Id:");
         idUsuario = scanner.nextInt();
         try{
@@ -164,6 +166,7 @@ public class Sistema {
         return membro;
 
  }
+
     public Horario getHorario(){
         //Armazena horario e dia da semana
         Calendar calendar = Calendar.getInstance();
@@ -303,7 +306,7 @@ public class Sistema {
 
     }
 
-    public void criarArquivo(String funcao, String nome, int id) throws Exception {
+    public void criarArquivo(Funcao funcao, String nome, int id) throws Exception {
 
         FileWriter escreveArquivo = new FileWriter("arquivo_super_Secreto_nao_abrir.csv");
         String dadosUsuario = funcao + ";" + nome + ";" + id;
