@@ -313,7 +313,7 @@ public class Sistema {
 
         FileWriter escreveArquivo = new FileWriter("arquivo_super_Secreto_nao_abrir.csv");
         String dadosUsuario = funcao + ";" + nome + ";" + id;
-        escreveArquivo.write(dadosUsuario);
+        escreveArquivo.append(dadosUsuario);
         escreveArquivo.close();
     }
 
