@@ -20,7 +20,7 @@ public class Heavy_Lifters extends Membro{
 
     @Override
     public String postarMensagem(Horario horario) {
-        if(horario == Horario.REGULAR){
+        if(horario.equals(Horario.REGULAR)){
             return assinaturaRegular;
         }
         else{return assinaturaExtra;}
