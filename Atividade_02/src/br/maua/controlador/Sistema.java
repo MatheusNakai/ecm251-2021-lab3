@@ -80,6 +80,7 @@ public class Sistema {
 
                 case (6):
                     System.out.println("Finalizando o sistema.");
+                    break;
 
                 default:
                     System.out.println("Funcao nao implementada");
@@ -200,8 +201,8 @@ public class Sistema {
                     cont++;
                 }
                 System.out.println("Selecione a posicao do membro (Comeca em 1):");
-                int posicao = Integer.parseInt(scanner.next());
-                if(posicao<listaBigBrothers.size()){
+                int posicao = scanner.nextInt();
+                if(posicao<=listaBigBrothers.size()){
                     posicao-=1;
                     listaBigBrothers.remove(posicao);
                     return true;
@@ -217,7 +218,7 @@ public class Sistema {
                     cont++;
                 }
                 System.out.println("Selecione a posicao do membro (Comeca em 1):");
-                posicao = Integer.parseInt(scanner.next());
+                posicao = scanner.nextInt();
                 if(posicao<listaHeavyLifters.size()){
                     posicao-=1;
                     listaHeavyLifters.remove(posicao);
@@ -234,7 +235,7 @@ public class Sistema {
                     cont++;
                 }
                 System.out.println("Selecione a posicao do membro (Comeca em 1):");
-                posicao = Integer.parseInt(scanner.next());
+                posicao = scanner.nextInt();
                 if(posicao<listaScriptGuys.size()){
                     posicao-=1;
                     listaScriptGuys.remove(posicao);
@@ -251,7 +252,7 @@ public class Sistema {
                     cont++;
                 }
                 System.out.println("Selecione a posicao do membro (Comeca em 1):");
-                posicao = Integer.parseInt(scanner.next());
+                posicao = scanner.nextInt();
                 if(posicao<listaMobileMembers.size()){
                     posicao-=1;
                     listaMobileMembers.remove(posicao);
