@@ -106,4 +106,87 @@ public class Sistema {
         if (horario==Horario.REGULAR){return Horario.EXTRA;}
         else{return Horario.REGULAR;}
     }
+
+    public boolean removerMembro(){
+        System.out.println("Selecione o tipo de membro que deseja remover: (1 - Mobile Member), (2 - Big Brother), (3 - Heavy Lifter), (4 - Script Guy)");
+        String role = scanner.next();
+        Funcao funcao = tipodeMembro(role);
+        int cont = 1;
+        if(funcao ==null){
+            return false;
+        }
+        Membro membro;
+        switch (funcao){
+            case BIG_BROTHER:
+                for(Membro membro1 :listaBigBrothers){
+                    System.out.println(cont+" - "+membro1);
+                    cont++;
+                }
+                System.out.println("Selecione a posicao do membro (Comeca em 1):");
+                int posicao = Integer.parseInt(scanner.next());
+                if(posicao<listaBigBrothers.size()){
+                    posicao-=1;
+                    listaBigBrothers.remove(posicao);
+                    return true;
+                }else{
+                    System.out.println("Posicao invalida!");
+                    return false;
+                }
+
+
+            case HEAVY_LIFTER:
+                for(Membro membro1 :listaHeavyLifters){
+                    System.out.println(cont+" - "+membro1);
+                    cont++;
+                }
+                System.out.println("Selecione a posicao do membro (Comeca em 1):");
+                posicao = Integer.parseInt(scanner.next());
+                if(posicao<listaHeavyLifters.size()){
+                    posicao-=1;
+                    listaHeavyLifters.remove(posicao);
+                    return true;
+                }else{
+                    System.out.println("Posicao invalida!");
+                    return false;
+                }
+
+
+            case SCRIPT_GUY:
+                for(Membro membro1 :listaScriptGuys){
+                    System.out.println(cont+" - "+membro1);
+                    cont++;
+                }
+                System.out.println("Selecione a posicao do membro (Comeca em 1):");
+                posicao = Integer.parseInt(scanner.next());
+                if(posicao<listaScriptGuys.size()){
+                    posicao-=1;
+                    listaScriptGuys.remove(posicao);
+                    return true;
+                }else{
+                    System.out.println("Posicao invalida!");
+                    return false;
+                }
+
+
+            case MOBILE_MEMBER:
+                for(Membro membro1 :listaMobileMembers){
+                    System.out.println(cont+" - "+membro1);
+                    cont++;
+                }
+                System.out.println("Selecione a posicao do membro (Comeca em 1):");
+                posicao = Integer.parseInt(scanner.next());
+                if(posicao<listaMobileMembers.size()){
+                    posicao-=1;
+                    listaMobileMembers.remove(posicao);
+                    return true;
+                }else{
+                    System.out.println("Posicao invalida!");
+                    return false;
+                }
+
+            default:
+                throw new IllegalStateException("Unexpected value: " + funcao);
+        }
+    }
+
 }

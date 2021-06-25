@@ -41,5 +41,11 @@ public abstract class Membro implements PostarMensagem, Apresentacao {
         Membro.contador++;
     }
 
-
+    @Override
+    public String toString() {
+        return "Membro{" +
+                "nickname='" + nickname + '\'' +
+                ", id=" + id +
+                '}';
+    }
 }
