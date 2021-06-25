@@ -51,9 +51,6 @@ public class Sistema {
         System.out.println("Digite um nickname que deseje utilizar:");
         String nickname = scanner.next();
 
-        System.out.println("Digite a senha:");
-        String senha = scanner.next();
-
         System.out.println("Digite o email:");
         String email = scanner.next();
 
