@@ -1,6 +1,7 @@
 package br.maua.membros;
 
 import br.maua.enums.Funcao;
+import br.maua.enums.Horario;
 
 public class Heavy_Lifters extends Membro{
     private String assinaturaRegular = "Podem contar conosco!";
@@ -9,5 +10,19 @@ public class Heavy_Lifters extends Membro{
 
     public Heavy_Lifters(String nickname, String senha, Funcao funcao) {
         super(nickname, senha, funcao);
+    }
+
+    @Override
+    public String apresentar() {
+        String apresenta="Ola eu sou o "+nickname+" da MAsK_S0c13ty, sou um dos Heavy Lifters.";
+        return apresenta;
+    }
+
+    @Override
+    public String postarMensagem(Horario horario) {
+        if(horario == Horario.REGULAR){
+            return assinaturaRegular;
+        }
+        else{return assinaturaExtra;}
     }
 }

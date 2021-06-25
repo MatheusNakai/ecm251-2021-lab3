@@ -1,12 +1,19 @@
 package br.maua.controlador;
 
 import br.maua.enums.Funcao;
+import br.maua.enums.Horario;
 import br.maua.membros.*;
 
+import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Scanner;
 
 public class Sistema {
     private Scanner scanner= new Scanner(System.in);
+    ArrayList<Membro> listaMobileMembers= new ArrayList<>();
+    ArrayList<Membro> listaHeavyLifters = new ArrayList<>();
+    ArrayList<Membro> listaScriptGuys = new ArrayList<>();
+    ArrayList<Membro> listaBigBrothers = new ArrayList<>();
 
     /**
      *
@@ -54,18 +61,22 @@ public class Sistema {
         switch (funcao){
             case BIG_BROTHER:
                 membro = new Big_Brothers(nickname,senha,funcao);
+                listaBigBrothers.add(membro);
                 break;
                 
             case HEAVY_LIFTER:
                 membro = new Heavy_Lifters(nickname,senha,funcao);
+                listaHeavyLifters.add(membro);
                 break;
             
             case SCRIPT_GUY:
                 membro = new Script_Guys(nickname,senha,funcao);
+                listaScriptGuys.add(membro);
                 break;
                 
             case MOBILE_MEMBER:
                 membro = new Mobile_Members(nickname,senha,funcao);
+                listaMobileMembers.add(membro);
                 break;
 
 
@@ -75,4 +86,15 @@ public class Sistema {
         return membro;
 
  }
+    public Horario getHorario(){
+        //Armazena horario e dia da semana
+        Calendar calendar = Calendar.getInstance();
+        int day = calendar.get(Calendar.DAY_OF_WEEK);
+        int hour = calendar.get(Calendar.HOUR_OF_DAY);
+        int minute = calendar.get(Calendar.MINUTE);
+        if((2<=day && day<=6) && ((8<=hour)  )&&(hour<=17 )){
+            return Horario.REGULAR;
+        }
+        else{return Horario.EXTRA;}
+    }
 }
