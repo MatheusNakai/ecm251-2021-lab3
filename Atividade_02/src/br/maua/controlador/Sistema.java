@@ -58,7 +58,7 @@ public class Sistema {
 
             default:
                 throw new IllegalStateException("Unexpected value: " + funcaoUsuario);
-        }
+        } //adicao do Usuario ao banco de dados
 
         try{
             criarArquivo(funcaoUsuario,nicknameUsuario, usuario.id);
@@ -99,7 +99,7 @@ public class Sistema {
                     break;
 
                 case (4):
-                    mensagemdosMembros();
+                    mensagemdosMembros(horarioSistema);
                     break;
 
                 case (5):
@@ -297,7 +297,7 @@ public class Sistema {
         }
     }
 
-    public void mensagemdosMembros(){
+    public void mensagemdosMembros(Horario horaSistema){
         System.out.println("-------------------Mobile Members-------------------");
         for(Membro membro : listaMobileMembers) {
             System.out.println(membro.postarMensagem(horaSistema));
