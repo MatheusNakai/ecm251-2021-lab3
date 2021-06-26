@@ -335,6 +335,10 @@ public class Sistema {
 
     }
 
+    /**
+     * Executa o metodo apresentar das classes filhas de Membro.
+     * Apresentrando o nickname de todos os membros separados por tipo de membro
+     */
     public void apresentacaodosMembros(){
         System.out.println("-------------------Mobile Members-------------------");
         for(Membro membro : listaMobileMembers) {
