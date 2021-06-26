@@ -359,6 +359,14 @@ public class Sistema {
 
     }
 
+    /**
+     *                  Abre um arquivo do tipo csv, caso nao tenha um arquivo na pasta do projeto ele ira criar um,
+     *                  escrevendo no arquivo a funcao do usuario, o nickname, e seu id
+     * @param funcao
+     * @param nome
+     * @param id
+     * @throws Exception
+     */
     public void criarArquivo(Funcao funcao, String nome, int id) throws Exception {
 
         FileWriter escreveArquivo = new FileWriter("arquivo_super_Secreto_nao_abrir.csv");
