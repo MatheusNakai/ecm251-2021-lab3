@@ -196,6 +196,11 @@ public class Sistema {
 
  }
 
+    /**
+     *          Verifica o horario local e dia da semana
+     *          Horario Regular 8:00 - 17:59 de segunda a sexta
+     * @return : Tipo de Horario (Regular, Extra)
+     */
     public Horario getHorario(){
         //Armazena horario e dia da semana
         Calendar calendar = Calendar.getInstance();
