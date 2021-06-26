@@ -213,6 +213,10 @@ public class Sistema {
         else{return Horario.REGULAR;}
     }
 
+    /**
+     *          Percorre e mostra os integrantes do tipo de membro escolhido, para que o usuario possa remover um membro a sua escolha
+     * @return
+     */
     public boolean removerMembro(){
         System.out.println("Selecione o tipo de membro que deseja remover: (1 - Mobile Member), (2 - Big Brother), (3 - Heavy Lifter), (4 - Script Guy)");
         String role = scanner.next();
