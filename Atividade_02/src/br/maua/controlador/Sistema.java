@@ -301,6 +301,10 @@ public class Sistema {
         }
     }
 
+    /**
+     *                      Manda mensagem de todos os membros dependendo do tipo de horario
+     * @param horaSistema:  Tipo de enum (Extra ou regular)
+     */
     public void mensagemdosMembros(Horario horaSistema){
         System.out.println("-------------------Mobile Members-------------------");
         for(Membro membro : listaMobileMembers) {
