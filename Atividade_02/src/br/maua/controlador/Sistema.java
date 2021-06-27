@@ -215,8 +215,8 @@ public class Sistema {
 
     /**
      *        Recebe o parametro do tipo Enum Horario (Regular, Extra) do sistema dependendo do horario local
-     * @param horario
-     * @return: O tipo de Horario trocado para que o usuario possa gerenciar todos os tipos de horarios para qualquer hora local que ele esteja
+     * @param horario : Tipo de Horario (Regular, Extra)
+     * @return : O tipo de Horario trocado para que o usuario possa gerenciar todos os tipos de horarios para qualquer hora local que ele esteja
      */
     public Horario trocarHorario(Horario horario){
         if (horario==Horario.REGULAR){return Horario.EXTRA;}
