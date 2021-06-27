@@ -7,6 +7,7 @@ import br.maua.membros.*;
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Sistema {
@@ -34,7 +35,7 @@ public class Sistema {
         emailUsuario = scanner.next();
 
         Membro usuario;
-        switch (funcaoUsuario){
+        switch (Objects.requireNonNull(funcaoUsuario)){
             case BIG_BROTHER:
                 usuario = new Big_Brothers(nicknameUsuario,funcaoUsuario,emailUsuario);
                 listaBigBrothers.add(usuario);
